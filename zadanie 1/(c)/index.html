@@ -7,64 +7,37 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<h1>Стоит ли вам играть сегодня в бадминтон</h1>
-<p>Укажите следующую информацию:</p>
-<p>
-  День недели:
-  <select id="daySelect">
-    <option value="Sunday">Sunday</option>
-    <option value="Monday">Monday</option>
-    <option value="Tuesday">Tuesday</option>
-    <option value="Wednesday">Wednesday</option>
-    <option value="Thursday">Thursday</option>
-    <option value="Friday">Friday</option>
-    <option value="Saturday">Saturday</option>
-  </select>
-  <br />
-  <br />
-  Weather:
-  <select id="weatherSelect">
-    <option value="Sunny">Sunny</option>
-    <option value="Cloudy">Cloudy</option>
-    <option value="Rainy">Rainy</option>
-    <option value="Snowy">Snowy</option>
-    <option value="Hail">Hail</option>
-  </select>
-  <br />
-  <br />
-  Temperature:
-  <select id="temperatureSelect">
-    <option value="Hot">Hot</option>
-    <option value="Warm">Warm</option>
-    <option value="Cold">Cold</option>
-  </select>
-  <br />
-  <br />
-  Precipitation:
-  <select id="precipitationSelect">
-    <option value="Clear">Clear</option>
-    <option value="Partly cloudy">Partly cloudy</option>
-    <option value="Rain">Rain</option>
-    <option value="Snow">Snow</option>
-    <option value="Hail">Hail</option>
-  </select>
-  <br />
-  <br />
-  Wind:
-  <select id="windSelect">
-    <option value="Yes">Yes</option>
-    <option value="No">No</option>
-  </select>
-  <br />
-  <br />
-  Humidity:
-  <select id="humiditySelect">
-    <option value="High">High</option>
-    <option value="Low">Low</option>
-  </select>
-</p>
-<button onclick="checkBadminton()">ок</button>
-<p id="result"></p>
-<script src="js/hello.js"></script>
+    <h1>Стоит ли вам играть сегодня в бадминтон?</h1>
+    <label for="weather">Погода:</label>
+    <select id="weather">
+        <option value="ясно">Ясно</option>
+        <option value="облачно">Облачно</option>
+        <option value="дождь">Дождь</option>
+        <option value="снег">Снег</option>
+        <option value="град">Град</option>
+    </select><br><br>
+
+    <label for="temperature">Температура:</label>
+    <select id="temperature">
+        <option value="жарко">Жарко</option>
+        <option value="тепло">Тепло</option>
+        <option value="холодно">Холодно</option>
+    </select><br><br>
+
+    <label for="wind">Ветер:</label>
+    <select id="wind">
+        <option value="есть">Есть</option>
+        <option value="нет">Нет</option>
+    </select><br><br>
+
+    <label for="humidity">Влажность:</label>
+    <select id="humidity">
+        <option value="высокая">Высокая</option>
+        <option value="низкая">Низкая</option>
+    </select><br><br>
+
+    <button onclick="checkButtonClicked()">ок</button>
+    <p id="result"></p>
+    <script src="js/hello.js"></script>
 </body>
 </html>
