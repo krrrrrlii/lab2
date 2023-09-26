@@ -1,14 +1,16 @@
-function calculateAge() {
-    var age = parseInt(document.getElementById("ageInput").value);
-    var result = age + " ";
-
-    if (age === 1 || age % 10 === 1) {
-        result += "год";
-    } else if ((age >= 2 && age <= 4) || (age % 10 >= 2 && age % 10 <= 4)) {
-        result += "года";
+function calculate() {
+    var age = document.getElementById("ageInput").value;
+    var result = "";
+  
+    if (age % 100 >= 11 && age % 100 <= 14) {
+      result = age + " лет";
+    } else if (age % 10 === 1) {
+      result = age + " год";
+    } else if (age % 10 >= 2 && age % 10 <= 4) {
+      result = age + " года";
     } else {
-        result += "лет";
+      result = age + " лет";
     }
-
-    document.getElementById("resultText").textContent = result;
-}
+  
+    document.getElementById("result").innerHTML = result;
+  }
